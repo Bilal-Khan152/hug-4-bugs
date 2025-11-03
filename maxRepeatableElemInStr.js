@@ -1,4 +1,4 @@
-//  Problem:
+ //  Problem:
 // Find which character appears the most times in a given string
 // and show both the character and how many times it appears.
 
@@ -6,6 +6,7 @@ const findMaxRepeatableElemInStr = (str) => {
   const arr = str.split("");
   const obj = {};
 
+  // Count how many times each character appears
   for (let i = 0; i <= arr.length - 1; i++) {
     if (!obj.hasOwnProperty(arr[i])) {
       const elem = arr[i];
@@ -16,6 +17,7 @@ const findMaxRepeatableElemInStr = (str) => {
     }
   }
 
+  // Find the character with the highest count
   let maxCount = 0;
   let maxChar = "";
 
